@@ -1,0 +1,24 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+ul.nav {
+    list-style-type: none;  
+    background-color: white;  
+}
+
+ul.nav > li {
+    display: inline-block;
+    padding: 10px 20px;
+
+}
+
+button.mint {
+    font-size: 20px;
+    
+}
+
+body {
+    background-color: lightblue;
+    text-align: center;
+  }
+

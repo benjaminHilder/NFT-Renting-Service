@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+    <script src = "https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+        type="application/javascript"></script>
+
+    <script src="index.js"></script>
+</head>
+<body>
+    <button onclick=connectWallet()>Connect Wallet</button>
+    <h1>Renting NFT Service!</h1>
+    <h2>NFT Address</h2>
+    <input id="NFT Address rent" placeholder="Enter NFT Address:">
+    <h2>NFT ID</h2>
+    <input id="NFT ID rent" placeholder="Enter NFT ID:">
+    <h2>Renter Address</h2>
+    <input id="Renter Address" placeholder="Enter Renter Address:">
+    <h2>Rent Time (seconds)</h2>
+    <input id="Rent Time" placeholder="Enter Rent Time:"> 
+    <br>
+    <br>
+    <button onclick=approveRentingContract()>Approve Renting Contract</button>
+    <button onclick=sendNFTToRent()>Submit</button>
+    <h1>Claim NFT Back</h1>
+    <h2>NFT Address</h2>
+    <input id="NFT Address claim" placeholder="Enter NFT Address:">
+    <h2>NFT ID</h2>
+    <input id="NFT ID claim" placeholder="Enter NFT ID:">
+    <br>
+    <br>
+    <button onclick=claimNFTBack()>Submit</button>
+    <h1>How Much Rent Time Left?</h1>
+    <h2>Rent ID</h2>
+    <input id="rent time" placeholder="Enter Rent ID:">
+    <br>
+    <br>
+    <button onclick=getHowMuchRentTimeIsLeft()>Submit</button>
+</body>
+</html>
