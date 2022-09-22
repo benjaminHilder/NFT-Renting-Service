@@ -1,5 +1,3 @@
-const { ethers } = require("hardhat")
-
 let provider = new ethers.providers.Web3Provider(window.ethereum)
 let signer
 
